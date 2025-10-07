@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Darja Khramtsova - Web Basics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="logo">
+            <img src="img/4.jpg" alt="Cat Logo" class="cat-logo">
+        </div>
+        <nav>
+            <a href="#" class="active">Basics</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Me</a>
+        </nav>
+    </header>
+
+    <section class="hero-banner">
+        
+        <h1 class="hero-title">HTML & CSS Fundamentals</h1>
+        
+        <div class="card-style hero-card">
+            <p>
+                HTML (HyperText Markup Language) provides the **structure** of a web page. Every page starts with <code>&lt;!DOCTYPE html&gt;</code> and contains a <code>&lt;head&gt;</code> (metadata) and a <code>&lt;body&gt;</code> (visible content).
+            </p>
+            <p>
+                CSS (Cascading Style Sheets) controls the **visual presentation** of HTML elements. We use properties like <code>padding</code>, <code>border</code>, and **Flexbox** to create responsive and adaptable layouts easily.
+            </p>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section class="apollo-section">
+            <h2 class="section-title">Visualizing Basics</h2>
+            <div class="apollo-content">
+                
+                <div class="info-card"> 
+                    
+                    <div class="rover-image-wrapper">
+                        <img src="img/3.jpg" alt="White cat portrait" class="rover-image">
+                    </div>
+                    
+                    <h3>Semantic Structure</h3>
+                    <div class="text-card card-style">
+                        <p>
+                            Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> define the meaning of your content for browsers and accessibility tools. This provides a robust foundation for good design.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="moon-image-container">
+                    <img src="img/1.png" alt="Crushed Coca-Cola can" class="moon-image-large">
+                    <p class="moon-caption">Design focus: Contrast and visual weight</p>
+                </div>
+
+            </div>
+        </section>
+        
+        
+        <section class="about-me-section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="bio-content-simple card-style">
+                <div class="bio-text">
+                    <p>
+                        I'm **Darja**, a 20 y.o. UX/UI design student at Voco (UX/UI Disaineri Noorem Spetsialisti programme). 
+                        My journey focuses on combining clean aesthetics with intuitive usability. I believe that good design starts with simple, clear structure, which is why I value strong HTML fundamentals and flexible CSS layouts.
+                    </p>
+                    <p class="contact-info">Email: darja.hramtsova@voco.ee</p>
+                </div>
+                <img src="img/4.jpg" alt="Abstract Cat Logo" class="profile-pic">
+            </div>
+            
+        </section>
+
+        
+        <section class="bottom-cards-section">
+            <h2 class="section-title" id="gallery">Minimalist Gallery</h2>
+            <div class="bottom-cards-grid">
+                
+                <div class="bottom-card card-style">
+                    <img src="img/2.jpg" alt="Black and white lilies">
+                    <div class="card-body">
+                        <h3>Floral Contrast</h3>
+                        <p>Exploring visual weight and texture in minimalist design.</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="footer">
+        <p>Made with ❤️ by Darja</p>
+    </footer>
 </body>
 </html>
