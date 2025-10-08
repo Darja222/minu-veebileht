@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darja Khramtsova - Web Basics</title>
+    <title>Web Basics</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,61 +12,118 @@
             <img src="img/4.jpg" alt="Cat Logo" class="cat-logo">
         </div>
         <nav>
-            <a href="#" class="active">Basics</a>
+            <a href="#info">Information</a> 
             <a href="#gallery">Gallery</a>
             <a href="#about">About Me</a>
         </nav>
     </header>
 
     <section class="hero-banner">
-        
-        <h1 class="hero-title">HTML & CSS Fundamentals</h1>
-        
-        <div class="card-style hero-card">
-            <p>
-                HTML (HyperText Markup Language) provides the **structure** of a web page. Every page starts with <code>&lt;!DOCTYPE html&gt;</code> and contains a <code>&lt;head&gt;</code> (metadata) and a <code>&lt;body&gt;</code> (visible content).
-            </p>
-            <p>
-                CSS (Cascading Style Sheets) controls the **visual presentation** of HTML elements. We use properties like <code>padding</code>, <code>border</code>, and **Flexbox** to create responsive and adaptable layouts easily.
-            </p>
-        </div>
+        <h1 class="hero-title">LEARNING WEB</h1>
     </section>
 
     <main class="container">
         
-        <section class="apollo-section">
-            <h2 class="section-title">Visualizing Basics</h2>
-            <div class="apollo-content">
+        <section class="visualizing-Information-section" id="info">
+            <h2 class="section-title">What is HTML and CSS?</h2>
+            <div class="visualizing-content-grid">
                 
-                <div class="info-card"> 
-                    
-                    <div class="rover-image-wrapper">
-                        <img src="img/3.jpg" alt="White cat portrait" class="rover-image">
+                <div class="text-column">
+                    <div class="card-style semantic-structure-card">
+                        <h3>HTML</h3>
+                        <p>- HTML stands for Hyper Text Markup Language</p>
+                        <p>- HTML is the standard markup language for creating Web pages</p>
+                        <p>- HTML describes the structure of a Web page</p>
+                        <p>- HTML consists of a series of elements</p>
                     </div>
                     
-                    <h3>Semantic Structure</h3>
-                    <div class="text-card card-style">
-                        <p>
-                            Semantic elements like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> define the meaning of your content for browsers and accessibility tools. This provides a robust foundation for good design.
-                        </p>
+                    <div class="card-style semantic-structure-card">
+                        <h3>CSS</h3>
+                        <p>- CSS is the language we use to style a Web page.</p>
+                        <p>- CSS stands for Cascading Style Sheets</p>
+                        <p> - CSS saves a lot of work. It can control the layout of multiple web pages all at onceExternal stylesheets are stored in CSS files</p>
                     </div>
                 </div>
                 
-                <div class="moon-image-container">
-                    <img src="img/1.png" alt="Crushed Coca-Cola can" class="moon-image-large">
-                    <p class="moon-caption">Design focus: Contrast and visual weight</p>
+                <div class="coca-cola-image-wrapper">
+                    <img src="img/1.png" alt="Crushed Coca-Cola can" class="coca-cola-image">
                 </div>
+            </div>
+            
+            <h2 class="section-title">Commands</h2>
+            <section class="commands-list">
+                <div class="bio-content-simple card-style">
+                    <div class="bio-text">
+                        <ul>
+                            <li>ls - shows the contents of the current folder</li>
+                            <li>cd "folder name" - changes directory (moves into the folder)</li>
+                            <li>mkdir "folder name" - makes a new directory (creates a new folder)</li>
+                            <li>cd Documents - Moves into the Documents folder.</li>
+                            <li>git clone git@github.com.... - Downloads an existing project from GitHub to your local machine.</li>
+                            <li>git add . - Stages all changes in the current directory for the next commit.</li>
+                            <li>git commit -m "message describing changes" - Records the staged changes to the repository with a descriptive message.</li>
+                            <li>git push - Uploads the committed changes from your local repository to the remote repository (GitHub).</li>
+                            <li>git pull - Fetches and merges changes from the remote repository (GitHub) into your local repository.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
 
+        <section class="photo-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <div class="photo-grid">
+                
+                <div class="photo-card card-style">
+                    <img src="img/2.jpg" alt="Black and white lilies">
+                    <div class="card-body">
+                        <h3>Youtube Git tutorial</h3>
+                        <a href="https://www.youtube.com/watch?v=8JJ101D3knE">
+                            <p>Tutorial</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="photo-card card-style">
+                    <img src="img/3.jpg" alt="White cat portrait">
+                    <div class="card-body">
+                        <h3>HTML Tutorial W3School</h3>
+                        <a href="https://www.w3schools.com/html/default.asp">
+                            <p>Tutorial</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="photo-card card-style">
+                    <img src="img/5.jpg" alt="White rabbit" class="rabbit-image"> 
+                    <div class="card-body">
+                        <h3>CSS Tutorial W3School</h3>
+                        <a href="https://www.w3schools.com/css/default.asp">
+                            <p>Tutorial</p>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
-        
+
+        <section class="video-section">
+            <div class="visualizing-media-wrapper">
+                <video 
+                    class="visualizing-media-video" 
+                    controls 
+                    autoplay 
+                    loop>
+                    <source src="video.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
         
         <section class="about-me-section" id="about">
             <h2 class="section-title">About Me</h2>
             <div class="bio-content-simple card-style">
                 <div class="bio-text">
                     <p>
-                        I'm **Darja**, a 20 y.o. UX/UI design student at Voco (UX/UI Disaineri Noorem Spetsialisti programme). 
+                        I'm Darja, a 20 y.o. UX/UI design student at Voco (UX/UI Disaineri Noorem Spetsialisti programme). 
                         My journey focuses on combining clean aesthetics with intuitive usability. I believe that good design starts with simple, clear structure, which is why I value strong HTML fundamentals and flexible CSS layouts.
                     </p>
                     <p class="contact-info">Email: darja.hramtsova@voco.ee</p>
@@ -96,7 +153,7 @@
     </main>
 
     <footer class="footer">
-        <p>Made with ❤️ by Darja</p>
+        <p>Darja Hramtsova | Made with 🤍</p>
     </footer>
 </body>
 </html>
