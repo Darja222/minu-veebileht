@@ -310,9 +310,3 @@ body {
     filter: none;
     background-color: var(--color-card-background);
 }
-@media (max-width: 800px) {
-    .visualizing-media-wrapper {
-        order: -1; 
-        margin-bottom: 20px;
-    }
-}
